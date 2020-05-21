@@ -1,0 +1,302 @@
+﻿@charset "utf-8";
+
+
+/*PC・タブレット・スマホ(全端末)共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+    margin: 0px;
+    padding: 0px;
+    -webkit-text-size-adjust: none;
+    color: #666; /*全体の文字色*/
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+    font-size: 16px; /*文字サイズ*/
+    line-height: 2; /*行間*/
+    background: #fff; /*背景色*/
+    min-width: 960px;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form, select, input, textarea {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 100%;
+    border-spacing: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+a {
+    color: #999999;
+}
+
+
+
+a:hover {
+    color: #FFFFFF;
+}
+
+
+.wrap {
+    overflow: hidden;
+}
+
+.main_container {
+    max-width: 1200px; /*ブロックの最大幅*/
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+
+.example { /*親div*/
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+
+.example p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white; /*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size:  2em; /*サイズ2倍*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    /*文字の装飾は省略*/
+}
+
+.example img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #000000;
+}
+
+
+.tag {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 5px;
+    background: #00FFFF;
+}
+
+.tag1 {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 170px;
+    height: 5px;
+    background: #00FFFF;
+}
+
+.tag2 {
+    position: absolute;
+    bottom: 0;
+    left: 320px;
+    width: 185px;
+    height: 5px;
+    background: #00FFFF;
+}
+
+.tag3 {
+    position: absolute;
+    bottom: 0;
+    left: 505px;
+    width: 150px;
+    height: 5px;
+    background: #00FFFF;
+}
+
+.tag4 {
+    position: absolute;
+    bottom: 0;
+    left: 655px;
+    width: 165px;
+    height: 5px;
+    background: #00FFFF;
+}
+
+.container p {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    word-spacing: 100px;
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    font-weight: bold; /*太字に*/
+    font-size: 0.9em; /*サイズ2倍*/
+}
+
+.intoro {
+    position: relative;
+}
+
+.intoro h3 {
+    position: relative;
+    top: 15px;
+    left: 50px;
+    color: black;
+    font-size: 2em; /*サイズ2倍*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+}
+
+.intoro p {
+    position: relative;
+    left: 50px;
+    color: black;
+    font-size: 1em; /*サイズ2倍*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+}
+
+
+.big dad {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.v_line_fix {
+    position: absolute;
+    left: 15%;
+    width: 5px;
+    height: 250px;
+    background-color: #CC6600;
+}
+
+.container3_1 p {
+    position: relative;
+    left: 250px;
+    top: 40px;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    height: 50px;
+    background: #CC6600;
+}
+
+.container2 p {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-weight: bold; /*太字に*/
+    font-size: 1em; /*サイズ2倍*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+}
+
+.intoro2 {
+    position: relative;
+    top: 60px;
+    height: 200px;
+}
+
+.intoro2 p {
+    position: relative;
+    top: 15px;
+    left: 50px;
+    word-spacing: 12px;
+    color: black; /*文字は白に*/
+    font-size: 1em; /*サイズ2倍*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+}
+
+
+
+
+.container3 {
+    position: relative;
+    top: 150px;
+    width: 100%;
+    height: 350px;
+    background: #000000;
+    left: 0px;
+}
+
+.container3 p5 {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    color: white;
+    font-size: 1em; /*サイズ2倍*/
+    font-weight: bold; /*太字に*/
+    font-family: Quicksand, sans-serif; /*Google Font*/
+}
+
+.container3 p1 {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    font-weight: bold; /*太字に*/
+    font-size: 1em; /*サイズ2倍*/
+}
+
+.container3 p2 {
+    position: absolute;
+    top: 95px;
+    left: 50px;
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    font-weight: bold; /*太字に*/
+    font-size: 1em; /*サイズ2倍*/
+}
+
+.container3 p3 {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    font-weight: bold; /*太字に*/
+    font-size: 1em; /*サイズ2倍*/
+}
+
+.container3 p4 {
+    position: absolute;
+    top: 145px;
+    left: 50px;
+    font-family: Quicksand, sans-serif; /*Google Font*/
+    font-weight: bold; /*太字に*/
+    font-size: 1em; /*サイズ2倍*/
+}

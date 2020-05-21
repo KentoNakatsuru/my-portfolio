@@ -1,0 +1,1354 @@
+﻿@charset "utf-8";
+
+
+/*PC・タブレット・スマホ(全端末)共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+
+@media screen and (min-width: 960px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        -webkit-text-size-adjust: none;
+        color: #666; /*全体の文字色*/
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+        font-size: 16px; /*文字サイズ*/
+        line-height: 2; /*行間*/
+        background: #fff; /*背景色*/
+        min-width: 960px;
+    }
+
+    h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form, select, input, textarea {
+        margin: 0px;
+        padding: 0px;
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ol {
+        padding-left: 40px;
+        padding-bottom: 15px;
+    }
+
+    img {
+        border: none;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: 100%;
+        border-spacing: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    a {
+        color: #999999;
+    }
+
+
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+
+    .wrap {
+        overflow: hidden;
+    }
+
+    .main_container {
+        max-width: 1200px; /*ブロックの最大幅*/
+        margin: 0 auto;
+        padding: 0 3%;
+    }
+
+
+    .example { /*親div*/
+        position: relative;
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+
+        .example p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white; /*文字は白に*/
+            font-weight: bold; /*太字に*/
+            font-size: 2em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 0;
+            /*文字の装飾は省略*/
+        }
+
+        .example img {
+            width: 100%;
+        }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #000000;
+    }
+
+    .cp_ipselect.cp_sl03{
+        display: none;
+    }
+
+    .tag {
+        position: absolute;
+        bottom: 0;
+        width: 150px;
+        height: 5px;
+        background: #00FFFF;
+    }
+
+    .tag1 {
+        position: absolute;
+        bottom: 0;
+        left: 150px;
+        width: 170px;
+        height: 5px;
+        background: #00FFFF;
+    }
+
+    .tag2 {
+        position: absolute;
+        bottom: 0;
+        left: 320px;
+        width: 185px;
+        height: 5px;
+        background: #00FFFF;
+    }
+
+    .tag3 {
+        position: absolute;
+        bottom: 0;
+        left: 505px;
+        width: 150px;
+        height: 5px;
+        background: #00FFFF;
+    }
+
+    .tag4 {
+        position: absolute;
+        bottom: 0;
+        left: 655px;
+        width: 165px;
+        height: 5px;
+        background: #00FFFF;
+    }
+
+    .container p {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        word-spacing: 100px;
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        font-weight: bold; /*太字に*/
+        font-size: 0.9em; /*サイズ2倍*/
+    }
+
+
+    .container_ipad {
+        display: none;
+    }
+
+
+    .tag_ipad {
+        display: none;
+    }
+
+    .tag1_ipad {
+        display: none;
+    }
+
+    .tag2_ipad {
+        display: none;
+    }
+
+    .tag3_ipad {
+        display: none;
+    }
+
+    .tag4_ipad {
+        display: none;
+    }
+
+    .container_ipad p {
+        display: none;
+    }
+
+
+
+    .intoro {
+        position: relative;
+    }
+
+    
+
+    .intoro h3 {
+        position: relative;
+        top: 15px;
+        left: 50px;
+        color: black;
+        font-size: 2em; /*サイズ2倍*/
+        font-family: Quicksand, sans-serif; /*Google Font*/
+    }
+
+        .intoro p {
+            position: relative;
+            top: 15px;
+            left: 50px;
+            color: black;
+            font-size: 1em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+        }
+
+
+    .big_dad {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 250px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .v_line_fix {
+        position: absolute;
+        left: 15%;
+        width: 5px;
+        height: 250px;
+        background-color: #CC6600;
+    }
+
+    .container3_1 p {
+        position: relative;
+        left: 250px;
+        top: 40px;
+    }
+
+
+    .big_dad2 {
+        display: none;
+    }
+
+    .v_line_fix2 {
+        display: none;
+    }
+
+    .container3_12 p {
+        display: none;
+    }
+
+    .big_dad_contact {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .big_dad_contact p1 {
+        position: absolute;
+        left: 22%;
+        top: 180px;
+        width: 70%;
+    }
+
+    .v_line_fix_contact {
+        position: absolute;
+        top: 50px;
+        left: 15%;
+        width: 5px;
+        height: 50px;
+        background-color: #CC6600;
+    }
+
+        .v_line_fix_contact p {
+            position: absolute;
+            color: black;
+            top: 10px;
+            left: -100px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            
+            font-size: 1.3em; /*サイズ2倍*/
+        }
+
+        .v_line_fix_contact h2 {
+            position: absolute;
+            color: black;
+            top: -10px;
+            left: 200px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-size: 1.3em; /*サイズ2倍*/
+        }
+
+
+            .v_line_fix_contact2 {
+                position: relative;
+                top: 150px;
+                left: 15%;
+                width: 5px;
+                height: 450px;
+                background-color: #CC6600;
+            }
+
+    .v_line_fix_contact2 p {
+        position: absolute;
+        color: black;
+        top: 200px;
+        left: -90px;
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        font-size: 1.3em; /*サイズ2倍*/
+    }
+
+    .container3_1_contact p {
+        position: relative;
+        left: 250px;
+        top: 40px;
+    }
+
+    .container2 {
+        position: relative;
+        width: 100%;
+        top: 50px;
+        height: 50px;
+        background: #CC6600;
+    }
+
+        .container2 p {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+        }
+
+    .intoro2 {
+        position: relative;
+        top: 60px;
+        height: 100px;
+    }
+
+        .intoro2 p {
+            position: relative;
+            top: 15px;
+            left: 50px;
+            word-spacing: 12px;
+            color: black; /*文字は白に*/
+            font-size: 1em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+        }
+
+
+    .intoro33 {
+        display: none;
+    }
+
+    .box {
+        position: relative;
+        width: 40%;
+        left: 0;
+    }
+
+    .box p {
+        position: relative;
+        color: black;
+        left: 50px;
+        top: 20px;
+    }
+
+        .box hr {
+            position: relative;
+            width: 500px;
+            border-width: 1px 0px 0px 0px; /* 太さ */
+            border-style: solid; /* 線種 */
+            height: 1px; /* 高さ(※古いIE用) */
+            top: 20px;
+            color: #d1a879;
+            left: 50px;
+        }
+
+    .box_iphone {
+       display: none;
+    }
+
+    .box_iphone p {
+        display: none;
+    }
+
+    .box_iphone hr {
+        display: none;
+    }
+
+    .container3 {
+        position: relative;
+        top: 150px;
+        width: 100%;
+        height: 350px;
+        background: #000000;
+        left: 0px;
+    }
+
+        .container3 p5 {
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            color: white;
+            font-size: 1em; /*サイズ2倍*/
+            font-weight: bold; /*太字に*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+        }
+
+        .container3 p1 {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+        }
+
+        .container3 p2 {
+            position: absolute;
+            top: 95px;
+            left: 50px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+        }
+
+        .container3 p3 {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+        }
+
+        .container3 p4 {
+            position: absolute;
+            top: 145px;
+            left: 50px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+        }
+
+    
+}
+
+
+    @media screen and (max-width: 959px) {
+
+        /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            -webkit-text-size-adjust: none;
+            color: #666; /*全体の文字色*/
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+            font-size: 16px; /*文字サイズ*/
+            line-height: 2; /*行間*/
+            background: #fff; /*背景色*/
+            max-width: 959px;
+        }
+
+        h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form, select, input, textarea {
+            margin: 0px;
+            padding: 0px;
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ol {
+            padding-left: 40px;
+            padding-bottom: 15px;
+        }
+
+        img {
+            border: none;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 100%;
+            border-spacing: 0;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        a {
+            color: #999999;
+        }
+
+
+
+            a:hover {
+                color: #FFFFFF;
+            }
+
+
+        .wrap {
+            overflow: hidden;
+        }
+
+        .main_container {
+            max-width: 1200px; /*ブロックの最大幅*/
+            margin: 0 auto;
+            padding: 0 3%;
+        }
+
+
+        .example { /*親div*/
+            position: relative;
+            left: 0px;
+            top: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+            .example p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: white; /*文字は白に*/
+                font-weight: bold; /*太字に*/
+                font-size: 1.5em; /*サイズ2倍*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                -ms-transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                /*文字の装飾は省略*/
+            }
+
+            .example img {
+                width: 100%;
+                height: 500px;
+            }
+
+        .container {
+            display: none;
+        }
+
+
+        .tag {
+            display: none;
+        }
+
+        .tag1 {
+            display: none;
+        }
+
+        .tag2 {
+            display: none;
+        }
+
+        .tag3 {
+            display: none;
+        }
+
+        .tag4 {
+            display: none;
+        }
+
+        .container p {
+            display: none;
+        }
+
+        
+
+        .container_ipad {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background: #000000;
+        }
+
+
+        .tag_ipad {
+            position: absolute;
+            bottom: 0;
+            width: 140px;
+            height: 5px;
+            background: #00FFFF;
+        }
+
+        .tag1_ipad {
+            position: absolute;
+            bottom: 0;
+            left: 140px;
+            width: 155px;
+            height: 5px;
+            background: #00FFFF;
+        }
+
+        .tag2_ipad {
+            position: absolute;
+            bottom: 0;
+            left: 295px;
+            width: 175px;
+            height: 5px;
+            background: #00FFFF;
+        }
+
+        .tag3_ipad {
+            position: absolute;
+            bottom: 0;
+            left: 470px;
+            width: 130px;
+            height: 5px;
+            background: #00FFFF;
+        }
+
+        .tag4_ipad {
+            position: absolute;
+            bottom: 0;
+            left: 600px;
+            width: 168px;
+            height: 5px;
+            background: #00FFFF;
+        }
+
+        .container_ipad p {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            word-spacing: 75px;
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            font-weight: bold; /*太字に*/
+            font-size: 0.9em; /*サイズ2倍*/
+        }
+
+
+        .box {
+            position: relative;
+            width: 40%;
+            left: 0;
+        }
+
+        .box p {
+            position: relative;
+            color: black;
+            left: 50px;
+            top: 20px;
+        }
+
+        .box hr {
+            position: relative;
+            width: 500px;
+            border-width: 1px 0px 0px 0px; /* 太さ */
+            border-style: solid; /* 線種 */
+            height: 1px; /* 高さ(※古いIE用) */
+            top: 20px;
+            color: #d1a879;
+            left: 50px;
+        }
+
+        .box_iphone {
+            position: absolute;
+            left: 1000px;
+        }
+
+            .box_iphone p {
+                position: absolute;
+                left: 1000px;
+            }
+
+            .box_iphone hr {
+                position: absolute;
+                left: 1000px;
+            }
+
+        .intoro {
+            position: relative;
+        }
+
+        .intoro33 {
+            position: absolute;
+            left: 1000px;
+        }
+
+            .intoro h3 {
+                position: relative;
+                top: 15px;
+                left: 50px;
+                color: black;
+                font-size: 2em; /*サイズ2倍*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+            }
+
+            .intoro p {
+                position: relative;
+                left: 50px;
+                color: black;
+                font-size: 1em; /*サイズ2倍*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+            }
+
+
+        .big dad {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            height: 300px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .v_line_fix {
+            position: absolute;
+            left: 15%;
+            width: 5px;
+            height: 250px;
+            background-color: #CC6600;
+        }
+
+        .container3_1 p {
+            position: relative;
+            left: 250px;
+            top: 40px;
+        }
+
+        .big_dad2 {
+            position: absolute;
+            left: 1000px;
+            
+        }
+
+        .v_line_fix2 {
+            position: absolute;
+            left: 1000px;
+        }
+
+        .container3_12 p {
+            position: absolute;
+            left: 1000px;
+        }
+
+
+        .container2 {
+            position: relative;
+            width: 100%;
+            top: 50px;
+            height: 50px;
+            background: #CC6600;
+        }
+
+            .container2 p {
+                position: absolute;
+                top: 10px;
+                left: 50px;
+                font-weight: bold; /*太字に*/
+                font-size: 1em; /*サイズ2倍*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+            }
+
+        .intoro2 {
+            position: relative;
+            top: 60px;
+            height: 200px;
+        }
+
+            .intoro2 p {
+                position: relative;
+                top: 15px;
+                left: 50px;
+                word-spacing: 12px;
+                color: black; /*文字は白に*/
+                font-size: 1em; /*サイズ2倍*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+            }
+
+
+              .cp_ipselect {
+        overflow: hidden;
+        width: 90%;
+        margin: 2em auto;
+        text-align: center;
+    }
+
+    .cp_ipselect select {
+        width: 100%;
+        padding-right: 1em;
+        cursor: pointer;
+        text-indent: 0.01px;
+        text-overflow: ellipsis;
+        border: none;
+        outline: none;
+        background: transparent;
+        background-image: none;
+        box-shadow: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .cp_ipselect select::-ms-expand {
+        display: none;
+    }
+
+    .cp_ipselect.cp_sl03 {
+        position: relative;
+        top: -35px;
+        width: 100%;
+        height: 50px;
+        border-radius: 2px;
+        border: 2px solid #000000;
+        background: #000000;
+    }
+
+    .cp_ipselect.cp_sl03::before {
+        position: absolute;
+        top: 45%;
+        right: 20px;
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #FFFFFF;
+        pointer-events: none;
+    }
+
+    .cp_ipselect.cp_sl03 select {
+        padding: 15px 38px 20px 30px;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+
+
+        .container3 {
+            position: relative;
+            top: 150px;
+            width: 100%;
+            height: 350px;
+            background: #000000;
+            left: 0px;
+        }
+
+            .container3 p5 {
+                position: absolute;
+                top: 25px;
+                left: 50px;
+                color: white;
+                font-size: 1em; /*サイズ2倍*/
+                font-weight: bold; /*太字に*/
+                font-family: Quicksand, sans-serif; /*Google Font*/
+            }
+
+            .container3 p1 {
+                position: absolute;
+                top: 70px;
+                left: 50px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-weight: bold; /*太字に*/
+                font-size: 1em; /*サイズ2倍*/
+            }
+
+            .container3 p2 {
+                position: absolute;
+                top: 95px;
+                left: 50px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-weight: bold; /*太字に*/
+                font-size: 1em; /*サイズ2倍*/
+            }
+
+            .container3 p3 {
+                position: absolute;
+                top: 120px;
+                left: 50px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-weight: bold; /*太字に*/
+                font-size: 1em; /*サイズ2倍*/
+            }
+
+            .container3 p4 {
+                position: absolute;
+                top: 145px;
+                left: 50px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-weight: bold; /*太字に*/
+                font-size: 1em; /*サイズ2倍*/
+            }
+
+
+        .big_dad_contact {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            height: 500px;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
+
+            .big_dad_contact p1 {
+                position: absolute;
+                left: 22%;
+                top: 180px;
+                width: 70%;
+            }
+
+        .v_line_fix_contact {
+            position: absolute;
+            top: 50px;
+            left: 15%;
+            width: 5px;
+            height: 50px;
+            background-color: #CC6600;
+        }
+
+            .v_line_fix_contact p {
+                position: absolute;
+                color: black;
+                top: 10px;
+                left: -100px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-size: 1.3em; /*サイズ2倍*/
+            }
+
+            .v_line_fix_contact h2 {
+                position: absolute;
+                color: black;
+                top: -10px;
+                left: 200px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-size: 1.3em; /*サイズ2倍*/
+            }
+
+
+        .v_line_fix_contact2 {
+            position: relative;
+            top: 150px;
+            left: 15%;
+            width: 5px;
+            height: 450px;
+            background-color: #CC6600;
+        }
+
+            .v_line_fix_contact2 p {
+                position: absolute;
+                color: black;
+                top: 200px;
+                left: -90px;
+                font-family: Quicksand, sans-serif; /*Google Font*/
+                font-size: 1.3em; /*サイズ2倍*/
+            }
+
+        .container3_1_contact p {
+            position: relative;
+            left: 250px;
+            top: 40px;
+        }
+
+    }
+
+
+
+@media screen and (max-width: 560px) {
+
+    /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+    body {
+        margin: 0px;
+        padding: 0px;
+        -webkit-text-size-adjust: none;
+        color: #666; /*全体の文字色*/
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+        font-size: 16px; /*文字サイズ*/
+        line-height: 2; /*行間*/
+        background: #fff; /*背景色*/
+        max-width: 560px;
+    }
+    a {
+        color: #999999;
+    }
+
+    a:hover {
+        color: #FFFFFF;
+    }
+
+    .example { /*親div*/
+        position: relative;
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+
+        .example p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white; /*文字は白に*/
+            font-weight: bold; /*太字に*/
+            font-size: 1em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+            transform: translate(-50%,-50%);
+            text-align: center;
+            /*文字の装飾は省略*/
+        }
+
+        .example img {
+            width: 100%;
+            height: 300px;
+        }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #000000;
+    }
+
+
+    .tag {
+        display: none;
+    }
+
+    .tag1 {
+        display: none;
+    }
+
+    .tag2 {
+        display: none;
+    }
+
+    .tag3 {
+        display: none;
+    }
+
+    .tag4 {
+        display: none;
+    }
+
+    .container p {
+        display: none;
+    }
+
+    .container_ipad {
+        display: none;
+    }
+
+
+    .tag_ipad {
+        display: none;
+    }
+
+    .tag1_ipad {
+        display: none;
+    }
+
+    .tag2_ipad {
+        display: none;
+    }
+
+    .tag3_ipad {
+        display: none;
+    }
+
+    .tag4_ipad {
+        display: none;
+    }
+
+    .container_ipad p {
+        display: none;
+    }
+
+
+
+    .intoro {
+        display: none;
+    }
+
+    .intoro p {
+        display: none;
+    }
+
+    .intoro33 {
+        position: relative;
+        left: 0px;
+    }
+        .intoro33 h3 {
+            position: relative;
+            top: -30px;
+            left: 30px;
+            color: black;
+            font-size: 2em; /*サイズ2倍*/
+            font-family: Quicksand, sans-serif; /*Google Font*/
+        }
+
+    .intoro33 p {
+        position: relative;
+        top: -30px;
+        left: 30px;
+        color: black;
+        font-size: 0.9em; /*サイズ2倍*/
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        word-break: break-word;
+    }
+
+    .container2 p {
+        left: 30px;
+    }
+
+    .intoro2 p {
+        position: relative;
+        top: 15px;
+        left: 30px;
+        word-spacing: 12px;
+        color: black; /*文字は白に*/
+        font-size: 0.9em; /*サイズ2倍*/
+        font-family: Quicksand, sans-serif; /*Google Font*/
+    }
+
+    .container {
+        display: none;
+    }
+
+   
+
+
+
+    .cp_ipselect {
+        overflow: hidden;
+        width: 90%;
+        margin: 2em auto;
+        text-align: center;
+    }
+
+    .cp_ipselect select {
+        width: 100%;
+        padding-right: 1em;
+        cursor: pointer;
+        text-indent: 0.01px;
+        text-overflow: ellipsis;
+        border: none;
+        outline: none;
+        background: transparent;
+        background-image: none;
+        box-shadow: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .cp_ipselect select::-ms-expand {
+        display: none;
+    }
+
+    .cp_ipselect.cp_sl03 {
+        position: relative;
+        top: -35px;
+        width: 100%;
+        height: 50px;
+        border-radius: 2px;
+        border: 2px solid #000000;
+        background: #000000;
+    }
+
+    .cp_ipselect.cp_sl03::before {
+        position: absolute;
+        top: 45%;
+        right: 20px;
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #FFFFFF;
+        pointer-events: none;
+    }
+
+    .cp_ipselect.cp_sl03 select {
+        padding: 15px 38px 20px 30px;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .big_dad{
+        display: none;
+    }
+
+    .v_line_fix{
+        display: none;
+    }
+
+    .container3_1 p {
+        display: none;
+    }
+
+    .box_iphone {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .box_iphone p {
+        position: relative;
+        color: black;
+        left: 10%;
+        top: 20px;
+    }
+
+    .box_iphone h {
+        position: relative;
+        color: black;
+    }
+
+    .box_iphone hr {
+        position: relative;
+        left: 0;
+        width: 90%;
+        border-width: 1px 0px 0px 0px; /* 太さ */
+        border-style: solid; /* 線種 */
+        height: 1px; /* 高さ(※古いIE用) */
+        top: 20px;
+        color: #d1a879;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .box p {
+        display: none;
+    }
+
+    .box hr {
+        display: none;
+    }
+
+
+    .big_dad2 {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .v_line_fix2 {
+        position: absolute;
+        left: 15%;
+        width: 5px;
+        height: 250px;
+        background-color: #CC6600;
+    }
+
+    .container3_12 p {
+        position: relative;
+        left: 100px;
+        top: 40px;
+    }
+
+
+    .big_dad_contact {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 500px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .big_dad_contact p1 {
+        position: absolute;
+        left: 33%;
+        top: 180px;
+        width: 60%;
+    }
+
+    .v_line_fix_contact {
+        position: absolute;
+        top: 50px;
+        left: 25%;
+        width: 5px;
+        height: 50px;
+        background-color: #CC6600;
+    }
+
+    .v_line_fix_contact p {
+        position: absolute;
+        color: black;
+        top: 7px;
+        left: -70px;
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        font-size: 1.1em; /*サイズ2倍*/
+    }
+
+    .v_line_fix_contact h2 {
+        position: absolute;
+        color: black;
+        top: 0px;
+        left: 30px;
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        font-size: 0.8em; /*サイズ2倍*/
+    }
+
+
+    .v_line_fix_contact2 {
+        position: relative;
+        top: 150px;
+        left: 25%;
+        width: 5px;
+        height: 450px;
+        background-color: #CC6600;
+    }
+
+    .v_line_fix_contact2 p {
+        position: absolute;
+        color: black;
+        top: 200px;
+        left: -65px;
+        font-family: Quicksand, sans-serif; /*Google Font*/
+        font-size: 1.1em; /*サイズ2倍*/
+    }
+       
+
+}
